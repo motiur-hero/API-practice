@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>api json</title>
+</head>
+<body>
+    <h1>json</h1>
+    <h2>javascript object notation</h2>
+
+
+
+<script>
+const user = {
+    id:45, 
+    name:"kamal",
+    friends: ["kamal","jamal","samal"],
+    friendsage: [1,2,3,]
+};
+const userJson = JSON.stringify(user);
+
+const userFromjson = JSON.parse(userJson);
+console.log(userJson)
+
+</script>
+
+</body>
+</html>

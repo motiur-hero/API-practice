@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>get data from other site..its called API</title>
+</head>
+<body>
+    <ul id="users-container">
+
+    </ul>
+
+
+    <script>
+
+function displayUser(users) {
+    console.log("users",users)
+    const userNames = users.map(user => user.username);
+    const ul = document.getElementById("users-container");
+    for (let i = 0; i < userNames.length; i++) {
+        const user = userNames[i];
+        const li = document.createElement("li")
+        li.innerText = user;
+        ul.appendChild(li);
+    }
+    console.log(userNames)
+}
+    </script>
+</body>
+</html>
